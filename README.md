@@ -1,6 +1,6 @@
 # Nomad
 
-![alt text](NOMAD_LOGO.png){:height="700px" width="400px"}
+![alt text](NOMAD_LOGO.png?s=200)
 
 Nomad world travel app!
 
