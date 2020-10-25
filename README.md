@@ -1,6 +1,6 @@
 # Nomad
 
-![alt text](http://url/to/img.png)
+![alt text](NOMAD_LOGO.png)
 
 Nomad world travel app!
 
