@@ -1,6 +1,6 @@
 # Nomad
 
-![alt text](NOMAD_LOGO.png)
+![alt text](NOMAD_LOGO)
 
 Nomad world travel app!
 
