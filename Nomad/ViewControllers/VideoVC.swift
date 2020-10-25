@@ -1,5 +1,5 @@
 //
-//  VideoVC.swift
+//  CreateAccountVC.swift
 //  Nomad
 //
 //  Created by MD R CHOWDHURY on 10/25/20.
@@ -8,23 +8,32 @@
 
 import UIKit
 
-class VideoVC: UIViewController {
+import FirebaseAuth
+
+class CreateAccountVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func createAccountPressed(_ sender: UIButton) {
+        beginSignUP()
     }
-    */
+    func beginSignUP() {
+        if let email = emailText.text, let password = passwordText.text {
+            Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+                if let firebaseError = error {
+                    print("Error signUpPressed @signUpPressed -->",firebaseError.localizedDescription)
+                    return
+                }
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+    }
+    
 
 }
