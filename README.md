@@ -1,6 +1,6 @@
 # Nomad
 
-![alt text](NOMAD_LOGO.png = 250X250)
+![alt text](NOMAD_LOGO.png =250X250)
 
 Nomad world travel app!
 
