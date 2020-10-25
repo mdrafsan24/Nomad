@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		16360F2E25452B3A00EAA5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16360F2D25452B3A00EAA5AA /* AppDelegate.swift */; };
 		16360F3025452B3A00EAA5AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16360F2F25452B3A00EAA5AA /* SceneDelegate.swift */; };
-		16360F3225452B3A00EAA5AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16360F3125452B3A00EAA5AA /* ViewController.swift */; };
+		16360F3225452B3A00EAA5AA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16360F3125452B3A00EAA5AA /* HomeVC.swift */; };
 		16360F3525452B3A00EAA5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16360F3325452B3A00EAA5AA /* Main.storyboard */; };
 		16360F3825452B3A00EAA5AA /* Nomad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16360F3625452B3A00EAA5AA /* Nomad.xcdatamodeld */; };
 		16360F3A25452B4300EAA5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16360F3925452B4300EAA5AA /* Assets.xcassets */; };
 		16360F3D25452B4300EAA5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16360F3B25452B4300EAA5AA /* LaunchScreen.storyboard */; };
 		16360F4825452B4300EAA5AA /* NomadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16360F4725452B4300EAA5AA /* NomadTests.swift */; };
 		16360F5325452B4300EAA5AA /* NomadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16360F5225452B4300EAA5AA /* NomadUITests.swift */; };
+		16360F62254531A200EAA5AA /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16360F61254531A200EAA5AA /* MapVC.swift */; };
+		16360F64254531AE00EAA5AA /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16360F63254531AE00EAA5AA /* VideoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		16360F2A25452B3A00EAA5AA /* Nomad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nomad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16360F2D25452B3A00EAA5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16360F2F25452B3A00EAA5AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		16360F3125452B3A00EAA5AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16360F3125452B3A00EAA5AA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		16360F3425452B3A00EAA5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16360F3725452B3A00EAA5AA /* Nomad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nomad.xcdatamodel; sourceTree = "<group>"; };
 		16360F3925452B4300EAA5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		16360F4E25452B4300EAA5AA /* NomadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NomadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16360F5225452B4300EAA5AA /* NomadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomadUITests.swift; sourceTree = "<group>"; };
 		16360F5425452B4300EAA5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16360F61254531A200EAA5AA /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		16360F63254531AE00EAA5AA /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,9 @@
 		16360F2C25452B3A00EAA5AA /* Nomad */ = {
 			isa = PBXGroup;
 			children = (
+				16360F602545317E00EAA5AA /* ViewControllers */,
 				16360F2D25452B3A00EAA5AA /* AppDelegate.swift */,
 				16360F2F25452B3A00EAA5AA /* SceneDelegate.swift */,
-				16360F3125452B3A00EAA5AA /* ViewController.swift */,
 				16360F3325452B3A00EAA5AA /* Main.storyboard */,
 				16360F3925452B4300EAA5AA /* Assets.xcassets */,
 				16360F3B25452B4300EAA5AA /* LaunchScreen.storyboard */,
@@ -129,6 +133,16 @@
 				16360F5425452B4300EAA5AA /* Info.plist */,
 			);
 			path = NomadUITests;
+			sourceTree = "<group>";
+		};
+		16360F602545317E00EAA5AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				16360F3125452B3A00EAA5AA /* HomeVC.swift */,
+				16360F61254531A200EAA5AA /* MapVC.swift */,
+				16360F63254531AE00EAA5AA /* VideoVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16360F3225452B3A00EAA5AA /* ViewController.swift in Sources */,
+				16360F64254531AE00EAA5AA /* VideoVC.swift in Sources */,
+				16360F62254531A200EAA5AA /* MapVC.swift in Sources */,
+				16360F3225452B3A00EAA5AA /* HomeVC.swift in Sources */,
 				16360F3825452B3A00EAA5AA /* Nomad.xcdatamodeld in Sources */,
 				16360F2E25452B3A00EAA5AA /* AppDelegate.swift in Sources */,
 				16360F3025452B3A00EAA5AA /* SceneDelegate.swift in Sources */,
